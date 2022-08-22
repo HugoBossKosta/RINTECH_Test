@@ -1,0 +1,131 @@
+@import '../mixin/mixin';
+
+
+.footer-text {
+    // color: #2D2D2D;
+    @include adaptiv-font(16,14);
+    // @media screen and (max-width:980px){
+    //     color: #fff;
+    // }
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 0vw 40px 0vw;
+
+    @media screen and (max-width:980px) {
+        flex-flow: column;
+        // margin-top: 5vh;
+        // background: #0F2992;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        // margin-left: -5vw !important;
+        // width: 100% !important;
+    }
+
+
+
+    &__right {
+        display: flex;
+    }
+}
+
+.footer-left {
+    width: 30%;
+    @media screen and (max-width:980px) {
+        margin-bottom: 3vh;
+        width: 50%;
+    }
+    
+    &__top {
+        margin-bottom: 1vh;
+        line-height: 19.5px;
+        @media screen and (max-width:980px){
+            line-height:17.07px;
+        }
+    }
+
+    &__down {
+        line-height:17.07px;
+    }
+}
+
+.footer-center {
+    width: 50%;
+    @media screen and (max-width:980px) {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 3vh;
+        width: 10%;
+    }
+   
+    &__acr {
+        margin-top: 1vh;
+        white-space: nowrap;
+    }
+
+    &__link {
+        margin-right: 1.5vw;
+        white-space: nowrap;
+        @media screen and (max-width:980px) {
+            margin-right: 0;
+            margin-bottom: 1vh;
+        }
+
+    }
+
+    &__blue-icon2 {
+        @media screen and (max-width:980px) {
+            display: none;
+        }
+    } 
+    &__white-icon2 {
+        @media screen and (min-width:980px) {
+            display: none;
+        }
+    }
+
+}
+
+.footer-right {
+    width: 10%;
+    display: flex;
+    justify-content: end;
+    @media screen and (max-width:980px) {
+        flex-flow: column;
+    }
+
+    &__textUp {
+        margin-bottom: 1vh;
+    }
+
+    &__text{
+        @media screen and (max-width:980px) {
+            margin-bottom: 3vh;
+        }
+    }
+
+    &__logo {
+        @media screen and (max-width:980px) {
+            width: 110%;
+            margin-bottom: 2vh;
+        }
+    }
+
+    &__textDown {
+        white-space: nowrap;
+    }
+
+    // &__blue-logo {
+    //     @media screen and (max-width:980px) {
+    //         display: none;
+    //     }
+    // }
+
+    // &__white-logo {
+    //     @media screen and (min-width:980px) {
+    //         display: none;
+    //     }
+    // }
+}

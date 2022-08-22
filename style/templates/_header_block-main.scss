@@ -1,0 +1,99 @@
+@import '../mixin/mixin';
+@import '../sandwich_menu/sandwich_menu';
+
+// бурге меню- цвет
+
+#sidebar .toggle-btn1 span::before {
+    background-color: #FFFFFF;
+}
+
+#sidebar .toggle-btn1 span::after {
+    background-color: #FFFFFF;
+}
+
+.cross-close__stripe::before {
+   background-color: #FFFFFF;
+}
+
+.cross-close__stripe::after {
+   background-color: #FFFFFF;
+}
+
+#sidebar-cross .cross-close1:hover {
+   background-color: rgb(43, 39, 39, 0.7);
+}
+
+.sidebar-menu-logo {
+    margin-left: 2vw;
+}
+
+// Начало header
+.header-block {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    // padding-top: 1.5vh;
+    // background-color: rgba(15, 41, 146, 0.7);
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    z-index: 2;
+  
+    
+    &__logo {
+        margin-left: 5vw;
+        min-width: 100px;
+        min-height: 34px;
+        margin-bottom: 1vh;
+        @media screen and (max-width:767px)
+        {
+            max-width: 100px;
+            min-height: 34px;
+        }
+    }
+
+    &__navigations {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 30px;
+
+    }
+
+    &__item:not(:last-child)
+    {
+        @media screen and (max-width:980px) {
+            display: none;
+        }
+    }
+
+    &__item-inner {
+        white-space: nowrap;
+        // color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__number {
+        display: none;
+        white-space: nowrap;
+        // color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        @media screen and (max-width:980px) {
+        display: block;
+        margin-left: 4vw;
+        }
+    }
+}
+
+.header-navigations {
+    margin-right: 1.5vw;
+}
+
+

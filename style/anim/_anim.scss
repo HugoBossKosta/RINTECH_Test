@@ -1,0 +1,1304 @@
+// Блок главная страница
+// @keyframes whitestripe {
+//     0% {
+//         top: -85vh;
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+//             top: -85vh;
+//         }
+//         @media screen and (max-width:2200px){
+//             top: -81vh;
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: -79vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: -75vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: -87vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: -84vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: -99vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: -100vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: -114vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: -93vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: -109vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: -106vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: -112vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: -135vh;
+//         }
+//           @media screen and (max-width:915px) and (max-height:412px){
+//             top: -86vh;
+//         }
+//         @media screen and (max-width:914px) and (max-height:412px){
+//             top: -85vh;
+//         }
+//         @media screen and (max-width:912px) and (max-height:1368px){
+//             top: -59vh;
+//         }
+//         @media screen and (max-width:896px) and (max-height:414px){
+//             top: -87vh;
+//         }
+//         @media screen and (max-width:851px) and (max-height:393px){
+//             top: -87vh;
+//         }
+//         @media screen and (max-width:844px) and (max-height:390px){
+//             top: -87vh;
+//         }
+//         @media screen and (max-width:820px) and (max-height:1180px){
+//             top: -65vh;
+//         }
+//         @media screen and (max-width:768px) and (max-height:1024px){
+//             top: -65vh;
+//         }
+//         @media screen and (max-width:740px) and (max-height:360px){
+//             top: -89vh;
+//         }
+//         @media screen and (max-width:720px) and (max-height:540px){
+//             top: -74vh;
+//         }
+//         @media screen and (max-width:667px) and (max-height:375px){
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:653px) and (max-height:280px){
+//             top: -85vh;
+//         }
+//         @media screen and (max-width:540px) and (max-height:720px){
+//             top: -63vh;
+//         }
+//         @media screen and (max-width:414px) and (max-height:896px){
+//             top: -66vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:915px){  
+//             top: -63vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:914px){
+//             top: -62vh;
+//         }
+//         @media screen and (max-width:393px) and (max-height:851px){
+//             top: -63vh;
+//         }
+//         @media screen and (max-width:390px) and (max-height:844px){
+//             top: -63vh;
+//         }
+//         @media screen and (max-width:360px) and (max-height:740px){
+//             top: -60vh;
+//         }   
+//         @media screen and (max-width:375px) and (max-height:667px){
+//             top: -60vh;
+//         }
+//         @media screen and (max-width:280px) and (max-height:653px){
+//             top: -59vh;
+//         }
+//     }  
+
+//     100% {
+//         top: -75vh;
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+//             top: -75vh;
+//         }
+//         @media screen and (max-width:2200px){
+//             top: -71vh;
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: -69vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: -65vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: -74vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: -89vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: -90vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: -104vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: -83vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: -99vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: -96vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: -102vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: -125vh;
+//         }
+//           @media screen and (max-width:915px) and (max-height:412px){
+//             top: -76vh;
+//         }
+//         @media screen and (max-width:914px) and (max-height:412px){
+//             top: -75vh;
+//         }
+//         @media screen and (max-width:912px) and (max-height:1368px){
+//             top: -49vh;
+//         }
+//         @media screen and (max-width:896px) and (max-height:414px){
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:851px) and (max-height:393px){
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:844px) and (max-height:390px){
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:820px) and (max-height:1180px){
+//             top: -55vh;
+//         }
+//         @media screen and (max-width:768px) and (max-height:1024px){
+//             top: -55vh;
+//         }
+//         @media screen and (max-width:740px) and (max-height:360px){
+//             top: -79vh;
+//         }
+//         @media screen and (max-width:720px) and (max-height:540px){
+//             top: -64vh;
+//         }
+//         @media screen and (max-width:667px) and (max-height:375px){
+//             top: -67vh;
+//         }
+//         @media screen and (max-width:653px) and (max-height:280px){
+//             top: -75vh;
+//         }
+//         @media screen and (max-width:540px) and (max-height:720px){
+//             top: -53vh;
+//         }
+//         @media screen and (max-width:414px) and (max-height:896px){
+//             top: -56vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:915px){  
+//             top: -53vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:914px){
+//             top: -52vh;
+//         }
+//         @media screen and (max-width:393px) and (max-height:851px){
+//             top: -53vh;
+//         }
+//         @media screen and (max-width:390px) and (max-height:844px){
+//             top: -53vh;
+//         }
+//         @media screen and (max-width:360px) and (max-height:740px){
+//             top: -50vh;
+//         }   
+//         @media screen and (max-width:375px) and (max-height:667px){
+//             top: -50vh;
+//         }
+//         @media screen and (max-width:280px) and (max-height:653px){
+//             top: -49vh;
+//         }
+
+//     }
+//  }
+
+
+// @keyframes redstripe {
+//     0% {
+//         top: -69vh;
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+//             top: -72vh;
+//         }
+//         @media screen and (max-width:2200px){
+//             top: -65vh;
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: -63vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: -59vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: -70vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: -67vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: -83vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: -83vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: -99vh;
+//         }
+      
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: -76vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: -95vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: -89vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: -95vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: -118vh;
+//         }
+//           @media screen and (max-width:915px) and (max-height:412px){
+//             top: -79vh;
+//         }
+//         @media screen and (max-width:914px) and (max-height:412px){
+//             top: -82vh;
+//         }
+//         @media screen and (max-width:912px) and (max-height:1368px){
+//             top: -42vh;
+//         }
+//         @media screen and (max-width:896px) and (max-height:414px){
+//             top: -87vh;
+//         }
+//         @media screen and (max-width:851px) and (max-height:393px){
+//             top: -81vh;
+//         }
+//         @media screen and (max-width:844px) and (max-height:390px){
+//             top: -78vh;
+//         }
+//         @media screen and (max-width:820px) and (max-height:1180px){
+//             top: -48vh;
+//         }
+//         @media screen and (max-width:768px) and (max-height:1024px){
+//             top: -46vh;
+//         }
+//         @media screen and (max-width:740px) and (max-height:360px){
+//             top: -80vh;
+//         }
+//         @media screen and (max-width:720px) and (max-height:540px){
+//             top: -60vh;
+//         }
+//         @media screen and (max-width:667px) and (max-height:375px){
+//             top: -68vh;
+//         }
+//         @media screen and (max-width:653px) and (max-height:280px){
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:540px) and (max-height:720px){
+//             top: -43vh;
+//         }
+//         @media screen and (max-width:414px) and (max-height:896px){
+//             top: -45vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:915px){
+//             top: -45vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:914px){
+//             top: -44vh;
+//         }
+//         @media screen and (max-width:393px) and (max-height:851px){
+//             top: -45vh;
+//         }
+//         @media screen and (max-width:390px) and (max-height:844px){
+//             top: -43vh;
+//         }
+//         @media screen and (max-width:360px) and (max-height:740px){
+//             top: -38vh;
+//         }   
+//         @media screen and (max-width:375px) and (max-height:667px){
+//             top: -40vh;
+//         }
+//         @media screen and (max-width:280px) and (max-height:653px){
+//             top: -39vh;
+//         }
+
+//     }  
+
+//     100% {
+//         top: -79vh;
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+//             top: -82vh;
+//         }
+//         @media screen and (max-width:2200px){
+//             top: -75vh;
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: -73vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: -69vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: -80vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: -77vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: -93vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: -93vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: -109vh;
+//         }
+      
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: -86vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: -105vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: -99vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: -105vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: -128vh;
+//         }
+//           @media screen and (max-width:915px) and (max-height:412px){
+//             top: -89vh;
+//         }
+//         @media screen and (max-width:914px) and (max-height:412px){
+//             top: -92vh;
+//         }
+//         @media screen and (max-width:912px) and (max-height:1368px){
+//             top: -52vh;
+//         }
+//         @media screen and (max-width:896px) and (max-height:414px){
+//             top: -97vh;
+//         }
+//         @media screen and (max-width:851px) and (max-height:393px){
+//             top: -91vh;
+//         }
+//         @media screen and (max-width:844px) and (max-height:390px){
+//             top: -88vh;
+//         }
+//         @media screen and (max-width:820px) and (max-height:1180px){
+//             top: -58vh;
+//         }
+//         @media screen and (max-width:768px) and (max-height:1024px){
+//             top: -56vh;
+//         }
+//         @media screen and (max-width:740px) and (max-height:360px){
+//             top: -90vh;
+//         }
+//         @media screen and (max-width:720px) and (max-height:540px){
+//             top: -70vh;
+//         }
+//         @media screen and (max-width:667px) and (max-height:375px){
+//             top: -78vh;
+//         }
+//         @media screen and (max-width:653px) and (max-height:280px){
+//             top: -87vh;
+//         }
+//         @media screen and (max-width:540px) and (max-height:720px){
+//             top: -53vh;
+//         }
+//         @media screen and (max-width:414px) and (max-height:896px){
+//             top: -55vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:915px){
+//             top: -55vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:914px){
+//             top: -54vh;
+//         }
+//         @media screen and (max-width:393px) and (max-height:851px){
+//             top: -55vh;
+//         }
+//         @media screen and (max-width:390px) and (max-height:844px){
+//             top: -53vh;
+//         }
+//         @media screen and (max-width:360px) and (max-height:740px){
+//             top: -48vh;
+//         }   
+//         @media screen and (max-width:375px) and (max-height:667px){
+//             top: -50vh;
+//         }
+//         @media screen and (max-width:280px) and (max-height:653px){
+//             top: -49vh;
+//         }
+//     }
+//  }
+
+
+// Блок о Компании
+//  @keyframes bluestripe1 {
+//     0% {
+//         top: 15vh;
+//         @media screen and (max-width:2880px) and (max-height:1800px) {
+       
+//         }
+//         @media screen and (max-width:2880px) and (max-height:1080px) {
+//             top: 15vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: 14vh;
+//         }
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+    
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:2034px) and (max-height:1440px) {
+      
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1200px) {
+
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: 13vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: 13vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: 13vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: 13vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: 11vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: 12vh;
+//         }
+//         @media screen and (max-width:980px){
+//             animation: none;
+//             // top: 91vh;
+//         }
+//         // @media screen and (max-width:915px) and (max-height:412px){
+//         //     top: 140vh;
+//         // }
+//         // @media screen and (max-width:914px) and (max-height:412px){
+//         //     top: 139vh;
+//         // }
+//         // @media screen and (max-width:912px) and (max-height:1368px){
+//         //     top: 64vh;
+//         // }
+//         // @media screen and (max-width:896px) and (max-height:414px){
+//         //     top: 140vh;
+//         // }
+//         // @media screen and (max-width:851px) and (max-height:393px){
+//         //     top: 146vh;
+//         // }
+//         // @media screen and (max-width:844px) and (max-height:390px){
+//         //     top: 148vh;
+//         // }
+//         // @media screen and (max-width:820px) and (max-height:1180px){
+//         //     top: 70vh;
+//         // }
+//         // @media screen and (max-width:768px) and (max-height:1024px){
+//         //     top: 76vh;
+//         // }
+//         // @media screen and (max-width:760px){
+//         //     top: 103vh;
+//         // }
+//         // @media screen and (max-width:740px) and (max-height:360px){
+//         //     top: 170vh;
+//         // }
+//         // @media screen and (max-width:720px) and (max-height:540px){
+//         //     top: 124vh;
+//         // }
+//         // @media screen and (max-width:667px) and (max-height:375px){
+//         //     top: 165vh;
+//         // }
+//         // @media screen and (max-width:653px) and (max-height:280px){
+//         //     top: 219vh;
+//         // }
+//         // @media screen and (max-width:540px) and (max-height:720px){
+//         //     top: 113vh;
+//         // }
+//         // @media screen and (max-width:540px){
+//         //     top: 113vh;
+//         // }
+//         // @media screen and (max-width:414px) and (max-height:896px){
+//         //     top: 117vh;
+//         // }
+//         // @media screen and (max-width:412px) and (max-height:915px){
+//         //     top: 115vh;
+//         // }
+//         // @media screen and (max-width:412px) and (max-height:914px){
+//         //     top: 115vh;
+//         // }
+//         // @media screen and (max-width:393px) and (max-height:851px){
+//         //     top: 126vh;
+//         // }
+//         // @media screen and (max-width:390px) and (max-height:844px){
+//         //     top: 126vh;
+//         // }
+//         // @media screen and (max-width:360px) and (max-height:740px){
+//         //     top: 210vh;
+//         // }   
+//         // @media screen and (max-width:375px) and (max-height:667px){
+//         //     top: 152vh;
+//         // }
+//         // @media screen and (max-width:280px) and (max-height:653px){
+//         //     top: 193vh;
+//         // }
+//         // @media screen and (max-width:280px){
+//         //     top: 193vh;
+//         // }
+//     }
+
+//     100% {
+//             top: 25vh;
+//             @media screen and (max-width:2880px) and (max-height:1800px) {
+       
+//             }
+//             @media screen and (max-width:2880px) and (max-height:1080px) {
+//                 top: 25vh;
+//             }
+//             @media screen and (max-width:2560px) and (max-height:1600px) {
+//                 top: 24vh;
+//             }
+//             @media screen and (max-width:2400px) and (max-height:1080px){
+    
+//             }
+//             @media screen and (max-width:2048px) and (max-height:1556px) {
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:2034px) and (max-height:1440px) {
+      
+//             }
+//             @media screen and (max-width:1920px) and (max-height:1440px) {
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:1920px) and (max-height:1200px) {
+
+//             }
+//             @media screen and (max-width:1920px) and (max-height:1080px) {
+//                 top: 23vh;
+//             }
+//             @media screen and (max-width:1600px) and (max-height:1200px) {
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:1600px) and (max-height:900px) {
+//                 top: 23vh;
+//             }
+//             @media screen and (max-width:1368px) and (max-height:912px){
+//                 top: 23vh;
+//             }
+//             @media screen and (max-width:1366px) and (max-height:768px) {
+//                 top: 23vh;
+//             }
+//             @media screen and (max-width:1280px) and (max-height:1024px) {
+//                 top: 21vh;
+//             }
+//             @media screen and (max-width:1280px) and (max-height:800px){
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:1180px) and (max-height:820px){
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:1024px) and (max-height:768px){
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:1024px) and (max-height:600px){
+//                 top: 22vh;
+//             }
+//             @media screen and (max-width:980px){
+//                 animation: none;
+//                 // top: 101vh;
+//             }
+//             // @media screen and (max-width:915px) and (max-height:412px){
+//             //     top: 150vh;
+//             // }
+//             // @media screen and (max-width:914px) and (max-height:412px){
+//             //     top: 149vh;
+//             // }
+//             // @media screen and (max-width:912px) and (max-height:1368px){
+//             //     top: 74vh;
+//             // }
+//             // @media screen and (max-width:896px) and (max-height:414px){
+//             //     top: 150vh;
+//             // }
+//             // @media screen and (max-width:851px) and (max-height:393px){
+//             //     top: 156vh;
+//             // }
+//             // @media screen and (max-width:844px) and (max-height:390px){
+//             //     top: 158vh;
+//             // }
+//             // @media screen and (max-width:820px) and (max-height:1180px){
+//             //     top: 80vh;
+//             // }
+//             // @media screen and (max-width:768px) and (max-height:1024px){
+//             //     top: 86vh;
+//             // }
+//             // @media screen and (max-width:760px){
+//             //     top: 113vh;
+//             // }
+//             // @media screen and (max-width:740px) and (max-height:360px){
+//             //     top: 180vh;
+//             // }
+//             // @media screen and (max-width:720px) and (max-height:540px){
+//             //     top: 134vh;
+//             // }
+//             // @media screen and (max-width:667px) and (max-height:375px){
+//             //     top: 175vh;
+//             // }
+//             // @media screen and (max-width:653px) and (max-height:280px){
+//             //     top: 229vh;
+//             // }
+//             // @media screen and (max-width:540px) and (max-height:720px){
+//             //     top: 123vh;
+//             // }
+//             // @media screen and (max-width:540px){
+//             //     top: 123vh;
+//             // }
+//             // @media screen and (max-width:414px) and (max-height:896px){
+//             //     top: 127vh;
+//             // }
+//             // @media screen and (max-width:412px) and (max-height:915px){
+//             //     top: 125vh;
+//             // }
+//             // @media screen and (max-width:412px) and (max-height:914px){
+//             //     top: 125vh;
+//             // }
+//             // @media screen and (max-width:393px) and (max-height:851px){
+//             //     top: 136vh;
+//             // }
+//             // @media screen and (max-width:390px) and (max-height:844px){
+//             //     top: 136vh;
+//             // }
+//             // @media screen and (max-width:360px) and (max-height:740px){
+//             //     top: 172vh;
+//             // }   
+//             // @media screen and (max-width:375px) and (max-height:667px){
+//             //     top: 162vh;
+//             // }
+//             // @media screen and (max-width:280px) and (max-height:653px){
+//             //     top: 203vh;
+//             // }
+//             // @media screen and (max-width:280px){
+//             //     top: 203vh;
+//             // }
+//     }
+// }
+
+//  @keyframes redstripe1 {
+//     0% {
+//         top: 32vh;
+//         @media screen and (max-width:2880px) and (max-height:1800px) {
+       
+//         }
+//         @media screen and (max-width:2880px) and (max-height:1080px) {
+//             top: 33vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: 32vh;
+//         }
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+    
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: 30vh;
+//         }
+//         @media screen and (max-width:2034px) and (max-height:1440px) {
+      
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: 29vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1200px) {
+
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: 30vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: 30vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: 29vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: 30vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: 30vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: 28vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: 30vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: 29vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: 29vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: 29vh;
+//         }
+//         @media screen and (max-width:980px){
+//             animation: none;
+//             // top: 108vh;
+//         }
+//         // @media screen and (max-width:915px) and (max-height:412px){
+//         //     top: 156vh;
+//         // }
+//         // @media screen and (max-width:914px) and (max-height:412px){
+//         //     top: 154vh;
+//         // }
+//         // @media screen and (max-width:912px) and (max-height:1368px){
+//         //     top: 81vh;
+//         // }
+//         // @media screen and (max-width:896px) and (max-height:414px){
+//         //     top: 156vh;
+//         // }
+//         // @media screen and (max-width:851px) and (max-height:393px){
+//         //     top: 162vh;
+//         // }
+//         // @media screen and (max-width:844px) and (max-height:390px){
+//         //     top: 164vh;
+//         // }
+//         // @media screen and (max-width:820px) and (max-height:1180px){
+//         //     top: 88vh;
+//         // }
+//         // @media screen and (max-width:768px) and (max-height:1024px){
+//         //     top: 93vh;
+//         // }
+//         // @media screen and (max-width:760px){
+//         //     top: 121vh;
+//         // }
+//         // @media screen and (max-width:740px) and (max-height:360px){
+//         //     top: 186vh;
+//         // }
+//         // @media screen and (max-width:720px) and (max-height:540px){
+//         //     top: 141vh;
+//         // }
+//         // @media screen and (max-width:667px) and (max-height:375px){
+//         //     top: 181vh;
+//         // }
+//         // @media screen and (max-width:653px) and (max-height:280px){
+//         //     top: 235vh;
+//         // }
+//         // @media screen and (max-width:540px) and (max-height:720px){
+//         //     top: 129vh;
+//         // }
+//         // @media screen and (max-width:540px){
+//         //     top: 131vh;
+//         // }
+//         // @media screen and (max-width:414px) and (max-height:896px){
+//         //     top: 135vh;
+//         // }
+//         // @media screen and (max-width:412px) and (max-height:915px){
+//         //     top: 133vh;
+//         // }
+//         // @media screen and (max-width:412px) and (max-height:914px){
+//         //     top: 133vh;
+//         // }
+//         // @media screen and (max-width:393px) and (max-height:851px){
+//         //     top: 144vh;
+//         // }
+//         // @media screen and (max-width:390px) and (max-height:844px){
+//         //     top: 144vh;
+//         // }
+//         // @media screen and (max-width:360px) and (max-height:740px){
+//         //     top: 160vh;
+//         // }   
+//         // @media screen and (max-width:375px) and (max-height:667px){
+//         //     top: 169vh;
+//         // }
+//         // @media screen and (max-width:280px) and (max-height:653px){
+//         //     top: 211vh;
+//         // }
+//         // @media screen and (max-width:280px){
+//         //     top: 211vh;
+//         // }
+//     }
+    
+
+//     100% {
+//         top: 22vh;
+//         @media screen and (max-width:2880px) and (max-height:1800px) {
+       
+//         }
+//         @media screen and (max-width:2880px) and (max-height:1080px) {
+//             top: 23vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: 22vh;
+//         }
+//         @media screen and (max-width:2400px) and (max-height:1080px){
+    
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: 20vh;
+//         }
+//         @media screen and (max-width:2034px) and (max-height:1440px) {
+      
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: 19vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1200px) {
+
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: 20vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: 20vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: 19vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: 20vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: 20vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: 18vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: 20vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: 19vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: 19vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: 19vh;
+//         }
+//         @media screen and (max-width:980px){
+//             animation: none;
+//             // top: 98vh;
+//         }
+//         // @media screen and (max-width:915px) and (max-height:412px){
+//         //     top: 146vh;
+//         // }
+//         // @media screen and (max-width:914px) and (max-height:412px){
+//         //     top: 144vh;
+//         // }
+//         // @media screen and (max-width:912px) and (max-height:1368px){
+//         //     top: 71vh;
+//         // }
+//         // @media screen and (max-width:896px) and (max-height:414px){
+//         //     top: 146vh;
+//         // }
+//         // @media screen and (max-width:851px) and (max-height:393px){
+//         //     top: 152vh;
+//         // }
+//         // @media screen and (max-width:844px) and (max-height:390px){
+//         //     top: 154vh;
+//         // }
+//         // @media screen and (max-width:820px) and (max-height:1180px){
+//         //     top: 78vh;
+//         // }
+//         // @media screen and (max-width:768px) and (max-height:1024px){
+//         //     top: 83vh;
+//         // }
+//         // @media screen and (max-width:760px){
+//         //     top: 111vh;
+//         // }
+//         // @media screen and (max-width:740px) and (max-height:360px){
+//         //     top: 176vh;
+//         // }
+//         // @media screen and (max-width:720px) and (max-height:540px){
+//         //     top: 131vh;
+//         // }
+//         // @media screen and (max-width:667px) and (max-height:375px){
+//         //     top: 171vh;
+//         // }
+//         // @media screen and (max-width:653px) and (max-height:280px){
+//         //     top: 225vh;
+//         // }
+//         // @media screen and (max-width:540px) and (max-height:720px){
+//         //     top: 119vh;
+//         // }
+//         // @media screen and (max-width:540px){
+//         //     top: 121vh;
+//         // }
+//         // @media screen and (max-width:414px) and (max-height:896px){
+//         //     top: 125vh;
+//         // }
+//         // @media screen and (max-width:412px) and (max-height:915px){
+//         //     top: 123vh;
+//         // }
+//         // @media screen and (max-width:412px) and (max-height:914px){
+//         //     top: 123vh;
+//         // }
+//         // @media screen and (max-width:393px) and (max-height:851px){
+//         //     top: 134vh;
+//         // }
+//         // @media screen and (max-width:390px) and (max-height:844px){
+//         //     top: 134vh;
+//         // }
+//         // @media screen and (max-width:360px) and (max-height:740px){
+//         //     top: 170vh;
+//         // }   
+//         // @media screen and (max-width:375px) and (max-height:667px){
+//         //     top: 159vh;
+//         // }
+//         // @media screen and (max-width:280px) and (max-height:653px){
+//         //     top: 201vh;
+//         // }
+//         // @media screen and (max-width:280px){
+//         //     top: 201vh;
+//         // }
+//     }
+
+//  }
+
+// Блок Вакансии
+
+// @keyframes bluestripe2 {
+//     0% {
+//         top:-12vh;
+//         @media screen and (max-width:2880px) and (max-height:1080px){
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: -11vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: -11vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: -11vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: -11vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: -12vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: -10vh;
+//         }
+//           @media screen and (max-width:915px) and (max-height:412px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:914px) and (max-height:412px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:912px) and (max-height:1368px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:896px) and (max-height:414px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:851px) and (max-height:393px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:844px) and (max-height:390px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:820px) and (max-height:1180px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:768px) and (max-height:1024px){
+//             top: -18vh;
+//         }
+//         @media screen and (max-width:740px) and (max-height:360px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:720px) and (max-height:540px){
+//             top: -18vh;
+//         }
+//         @media screen and (max-width:667px) and (max-height:375px){
+//             top: -20vh;
+//         }
+//         @media screen and (max-width:653px) and (max-height:280px){
+//             top: -18vh;
+//         }
+//         @media screen and (max-width:540px) and (max-height:720px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:414px) and (max-height:896px){
+//             top: -17vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:915px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:914px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:393px) and (max-height:851px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:390px) and (max-height:844px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:360px) and (max-height:740px){
+//             top: -16vh;
+//         }   
+//         @media screen and (max-width:375px) and (max-height:667px){
+//             top: -16vh;
+//         }
+//         @media screen and (max-width:280px) and (max-height:653px){
+//             top: -16vh;
+//         }
+//     }
+
+//     100% {
+//         top:-2vh;
+//         @media screen and (max-width:2880px) and (max-height:1080px){
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:2048px) and (max-height:1556px) {
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1440px) {
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:1920px) and (max-height:1080px) {
+//             top: -1vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:1200px) {
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:1600px) and (max-height:900px) {
+//             top: 0vh;
+//         }
+//         @media screen and (max-width:1368px) and (max-height:912px){
+//             top: -1vh;
+//         }
+//         @media screen and (max-width:1366px) and (max-height:768px) {
+//             top: -1vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:1024px) {
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:1280px) and (max-height:800px){
+//             top: -1vh;
+//         }
+//         @media screen and (max-width:1180px) and (max-height:820px){
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:768px){
+//             top: -2vh;
+//         }
+//         @media screen and (max-width:1024px) and (max-height:600px){
+//             top: 0vh;
+//         }
+//           @media screen and (max-width:915px) and (max-height:412px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:914px) and (max-height:412px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:912px) and (max-height:1368px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:896px) and (max-height:414px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:851px) and (max-height:393px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:844px) and (max-height:390px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:820px) and (max-height:1180px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:768px) and (max-height:1024px){
+//             top: -8vh;
+//         }
+//         @media screen and (max-width:740px) and (max-height:360px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:720px) and (max-height:540px){
+//             top: -8vh;
+//         }
+//         @media screen and (max-width:667px) and (max-height:375px){
+//             top: -10vh;
+//         }
+//         @media screen and (max-width:653px) and (max-height:280px){
+//             top: -8vh;
+//         }
+//         @media screen and (max-width:540px) and (max-height:720px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:414px) and (max-height:896px){
+//             top: -7vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:915px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:412px) and (max-height:914px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:393px) and (max-height:851px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:390px) and (max-height:844px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:360px) and (max-height:740px){
+//             top: -6vh;
+//         }   
+//         @media screen and (max-width:375px) and (max-height:667px){
+//             top: -6vh;
+//         }
+//         @media screen and (max-width:280px) and (max-height:653px){
+//             top: -6vh;
+//         }
+//     }
+// }
+
+// @keyframes redstripe2 {
+//     0% {
+//         top: 5vh;
+//         @media screen and (max-width:2880px) and (max-height:1080px){
+//             top: 6vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: 7vh;
+//         }
+//         @media screen and (max-width:1280px) {
+//          top:6vh;
+//         }
+//         @media screen and (max-width:980px){
+//         top: 9vh;
+//         }
+//         @media screen and (max-width:768px){
+//             top: 6vh;
+//         }
+//         @media screen and (max-width:600px) {
+//             top: 6vh;
+//         }
+//         @media screen and (max-width:480px) {
+//             top: 5vh;
+//         }
+//         @media screen and (max-width:375px){
+//         top: 5.5vh;
+//         }
+//         @media screen and (max-width:320px){
+//         top: 11vh; 
+//         }
+
+//     }
+
+//     100% {
+//         top: -5vh;
+//         @media screen and (max-width:2880px) and (max-height:1080px){
+//             top: -4vh;
+//         }
+//         @media screen and (max-width:2560px) and (max-height:1600px) {
+//             top: -3vh;
+//         }
+//         @media screen and (max-width:1280px) {
+//         top:-4vh;
+//         }
+//         @media screen and (max-width:980px){
+//         top: -1vh;
+//         }
+//         @media screen and (max-width:768px){
+//             top: -4vh;
+//         }
+//         @media screen and (max-width:600px) {
+//             top: -4vh;
+//         }
+//         @media screen and (max-width:480px) {
+//             top: -5vh;
+//         }
+//         @media screen and (max-width:375px) {
+//         top: -4.5vh;
+//         }
+//         @media screen and (max-width:320px){
+//         top: 1vh; 
+//         }
+//     }
+// }
+
+//  Блок Контакты
+
+// @keyframes whitestripe3 {
+//     0% {
+//         top: 4vh;
+//     }
+//     100% {
+//         top: 14vh;
+//     }
+// }
+
+// @keyframes redstripe3 {
+//     0% {
+//         top: 18vh;
+//         @media screen and (max-width:1280px){
+//             top: 20vh;
+//         }
+//     }
+
+//     100% {
+//         top: 8vh;
+//         @media screen and (max-width:1280px){
+//             top: 10vh;
+//         }
+//     }
+
+// }

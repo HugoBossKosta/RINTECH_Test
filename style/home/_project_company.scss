@@ -1,0 +1,140 @@
+@import '../mixin/mixin';
+
+// @include adaptiv-font(16,14);
+
+.projectCcompany-title {
+margin-bottom: 32px;
+
+@media screen and (max-width:980px) {
+    margin-bottom: 25px;
+}
+}
+
+.projectCompany-block {
+margin-bottom: 8vh;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+@media screen and (max-width:980px) {
+    margin-bottom: 5vh;
+    justify-content: center;
+
+}
+
+
+&__item {
+    margin-right: 5vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    @media screen and (max-width:980px) {
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+
+
+&__item:nth-child(2) {
+    margin-right: 0;
+}
+
+// &__item:last-child {
+//     @media screen and (min-width:980px) {
+//         display: none;
+//     }
+// }
+
+// &__item:nth-child(2) {
+//     @media screen and (max-width:980px) {
+//         display: none;
+//     }
+// }
+
+// &__item:nth-child(3) {
+//     @media screen and (max-width:980px) {
+//         display: none;
+//     }
+// }
+
+
+
+// &__item:last-child {
+//     width: 20%;
+//     @media screen and (min-width:980px) {
+//         display: none;
+//     }
+// }
+
+// &__item:nth-child(1) {
+//     width: 40%;
+// }
+
+// &__item:nth-child(3) {
+//     @media screen and (max-width:980px) {
+//         display: none;
+//     }
+// }
+
+// &__item:nth-child(2) {
+//         width: 30%;
+//         @media screen and (max-width:980px){
+//             display: none;
+//         }
+// }
+
+&__img {
+    width: 80%;
+
+
+}
+
+&__img2 {
+    width: 80%;
+    margin-top: -3vh;
+
+
+}
+
+// &__img:nth-child(2) {
+//         width: 50%; 
+// }
+
+// &__img:nth-child(4) {
+//     width: 10%; 
+// }
+
+&__title {
+    @include adaptiv-font(40,20);
+    margin-bottom: 3vh;
+    @media screen and (max-width:980px){
+        margin-bottom: 0.5vh;
+    }
+}
+
+&__title2{
+    @include adaptiv-font(40,20);
+    margin-bottom: 3vh;
+    @media screen and (max-width:980px){
+        margin-bottom: 0.5vh;
+    }
+}
+
+&__description {
+    text-align: center;
+    width: 15vw;
+    @media screen and (max-width:980px){
+    width: 45vw;
+    }
+}
+
+
+// &__description-soon {
+//     opacity: 0.8;
+// }
+}
+
+

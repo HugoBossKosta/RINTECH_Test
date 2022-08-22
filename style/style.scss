@@ -1,0 +1,521 @@
+@import '../style/templates/header_block-main';
+@import '../style/templates/footer_block-main';
+@import '../style/home/style_home';
+@import '../style/about-company/style_about-company';
+@import '../style/vacancies/style_vacancies';
+@import '../style/contacts/style_contacts';
+@import '../style/CEO/CEO';
+@import '../style/founders/style_founders';
+@import './mixin/mixin';
+
+
+* {
+// font-family: 'Montserrat Light';
+font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    // overflow: visible;
+    // font-family: 'Montserrat Light';
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.section-footer {
+    margin-top: auto;
+}
+
+.title {
+    @include adaptiv-font(40,32);
+    font-weight: 600;
+    line-height: 49px;
+    @media screen and (max-width:980px){
+        line-height:39px;
+    }
+
+    }
+
+.title-companyScroll {
+    @include adaptiv-font(40,20);
+    font-weight: 600;
+}
+
+.mainTitle {
+    @include adaptiv-font(96,59);
+    font-weight: 600;
+    line-height: 49px;
+}
+
+
+
+// ul {
+//     list-style: none;
+//     margin-left: 0;
+//     padding-left: 0;
+//   }
+  
+//   li {
+//     padding-left: 1em;
+//     text-indent: -1em;
+//   }
+  
+//   li:before {
+//     content: "-";
+//     padding-right: 5px;
+//   }
+
+
+ul {
+    list-style-type: none;
+}
+
+ul .vacanciesBlock__li {
+    @include adaptiv-font(16,14);
+    line-height: 19.5px;
+    position: relative;
+    @media screen and (max-width:980px){
+    line-height: 17.07px;
+    }
+
+
+    
+}
+ul .vacanciesBlock__li::before {
+    color: black;
+    content:"\2022";
+    // font-size: 26px;
+    font-size: 15px;
+    font-weight: 500;
+    left: 1vw;
+    line-height: 18px;        
+    position: absolute;
+    top: 0vh;
+    // top: 5px;
+}
+
+
+
+
+
+
+
+
+details > summary {
+    list-style: none;
+  }
+details > summary::marker {
+display: none;
+}
+
+  
+
+// настройка анимации текста снизу
+.element-animation {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+// настройка анимации текста сбоку справа
+.element-animationR {
+    opacity: 0;
+    transform: translateX(40px);
+}
+
+.element-animationR.element-showR {
+    opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+
+// настройка анимации текста слева
+
+.element-animationL {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.element-animationL.element-showL {
+    opacity: 1;
+  transition: all 1.5s;
+  transform: translateX(0%);
+}
+
+// Настройка анимации верхнего лого 
+.element-animationLogUp {
+    opacity: 0;
+    transform: translateY(-70px);
+}
+
+.element-animationLogUp.element-showlogUP {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0%);
+}
+
+// Настройка анимации нижнего лого 
+
+.element-animationLogDown {
+    opacity: 0;
+    transform: translateY(70px);
+}
+
+.element-animationLogDown.element-showlogDown {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0%);
+}
+
+
+
+
+
+.container {
+    max-width: 1512px;
+    width: 90vw;
+    margin: 0 auto;
+    @media screen and (max-width:980px) {
+        width: 92vw;
+    }
+}
+
+
+.button {
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 17px 59px;
+    white-space: nowrap;
+    @include adaptiv-font(20,16);
+    
+    // Динамическая адаптация кнопки
+    @media screen and (max-width:980px) {
+        width: calc(90% - 60 * (100vw/ 1512 ));
+        width: 100%;
+        min-width: 150px;
+        margin: 0 auto;
+        }
+}
+
+.button:hover {
+opacity: 0.6;
+}
+
+main{
+    position: relative;
+}
+
+
+// Настройка ссылок
+
+.link-text {
+    position: relative;
+    @include adaptiv-font(16,14);
+    line-height: 19.5px;
+    @media screen and (max-width:980px){
+        line-height:17.07px;
+    }
+}
+ 
+
+.link-text::before {
+    content: '';
+    bottom: 0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: 0.2s;
+    transform: scaleX(0);
+}
+
+.link-text1::before {
+    @media screen and (max-width:980px) {
+        background-color: #fff;
+    }
+}
+
+.link-text2::before {
+    @media screen and (min-width:980px) {
+        background-color: #2D2D2D;
+    }
+}
+
+.link-text3::before {
+    background-color: #fff;
+}
+
+.link-text4::before {
+    background-color: #2D2D2D;
+}
+
+.link-text5::before {
+    background-color: #0F2992;
+}
+
+.footer-text1 {
+    color: #2D2D2D;
+
+     @media screen and (max-width:980px){
+        color: #fff;
+    }
+}
+
+.footer-text2 {
+    color: #fff;
+}
+
+.footer-text3 {
+    color: #fff;
+    font-weight: 400;
+    @include adaptiv-font(16,14);
+    line-height: 19.5px;
+    @media screen and (max-width:980px){
+    line-height: 17.07px;
+    }
+} 
+
+
+.footer-block1 {
+    @media screen and (max-width:980px) {
+        background: #0F2992;
+        width: 100%;
+        margin-left: -5vw; 
+
+    }
+}
+
+
+.footer-block2 {
+    background: #0F2992;
+}
+
+
+.link-text:hover {
+    opacity: 0.7;
+}
+
+.link-text:hover::before {
+    transform: scaleX(1);
+    
+}
+
+// Настройка input
+
+.input {
+    display: block;
+            // width: 100%;
+           
+            margin-bottom: 1.5vh;
+            height: 3.5vh;
+           background: rgba(255, 255, 255, 0.26);
+           border: none;
+           border-radius: 3px;
+           
+           padding-left: 1.1vw;
+           padding-right:1.1vw;
+           font-weight: 400;
+           @include adaptiv-font(20,16);
+           line-height: 19px;
+}
+.input:focus{
+    background-color: #fff;
+}
+
+.description-Size{
+    @include adaptiv-font(16,14);
+     line-height:21.44px;
+    font-weight: 400;
+    @media screen and (max-width:980px){
+        line-height:17.07px;
+    }
+}
+
+.description-Size2 {
+    @include adaptiv-font(20,15);
+    line-height: 24.38px;
+    font-weight: 400;
+    @media screen and (max-width:980px){
+        line-height:19px;
+    }
+}
+
+.description-Size3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #2D2D2D;
+}
+
+.description-Size4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #2D2D2D;
+}
+
+.description-title {
+    @include adaptiv-font(20,18);
+    font-weight: 600;
+    line-height: 24px;
+    @media screen and (max-width:980px){
+        line-height:21.94px;
+    }
+}
+
+.desc-li {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 19.5px;
+   color: #2D2D2D;
+
+   width: 50%;
+   margin-bottom: 2vh;
+   margin-left: 3vw;
+   @media screen and (max-width:980px){
+       margin-bottom: 4vh;
+       width: 87%;
+   }
+
+}
+
+
+//  Добавление точек в блок CEO блок награды
+ul .awards__li {
+    font-size: 16px;
+    line-height: 19.5px;
+    position: relative;
+}
+
+ul .awards__li::before {
+    color: black;
+    content:"\2022";
+    // font-size: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;        
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    @media screen and (max-width:980px){
+        top: 0;
+        left: -4vw; 
+    }
+}
+
+
+//  Добавление точек в блок CEO блок Образование
+
+ul .education__li {
+    font-size: 16px;
+    line-height: 19.5px;
+    position: relative;
+}
+
+ul .education__li::before {
+    color: black;
+    content:"\2022";
+    // font-size: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;        
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    @media screen and (max-width:980px){
+        top: 0;
+        left: -4vw; 
+    }
+}
+
+//  Добавление точек в блок CEO блок Повышение квалификации
+
+ul .training__li {
+    font-size: 16px;
+    line-height: 19.5px;
+    position: relative;
+}
+
+ul .training__li::before {
+    color: black;
+    content:"\2022";
+    // font-size: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;        
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    @media screen and (max-width:980px){
+        top: 0;
+        left: -4vw; 
+    }
+}
+
+// Добавление точек в блок Гранты
+ul .grants__li {
+    font-size: 16px;
+    line-height: 19.5px;
+    position: relative;
+}
+
+ul .grants__li::before {
+    color: black;
+    content:"\2022";
+    // font-size: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;        
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    @media screen and (max-width:980px){
+        top: 0;
+        left: -4vw; 
+    }
+}
+
+// Добавление точек в блок Экспертная деятельность
+ul .expertActivity__li {
+    font-size: 16px;
+    line-height: 19.5px;
+    position: relative;
+}
+
+ul .expertActivity__li::before {
+    color: black;
+    content:"\2022";
+    // font-size: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;        
+    position: absolute;
+    top: 0;
+    left: -2vw;
+    @media screen and (max-width:980px){
+        top: 0;
+        left: -4vw; 
+    }
+}
+
+       

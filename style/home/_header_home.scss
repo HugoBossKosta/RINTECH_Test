@@ -1,0 +1,43 @@
+@import '../mixin/mixin';
+@import '../sandwich_menu/sandwich_menu';
+@import '../templates/header_block-main';
+
+// бурге меню- цвет
+
+#sidebar .toggle-btn1 span::before {
+    background-color: #FFFFFF;
+}
+
+#sidebar .toggle-btn1 span::after {
+    background-color: #FFFFFF;
+}
+
+#sidebar-cross .cross-close1:hover {
+   background-color: rgb(43, 39, 39, 0.7);
+}
+
+
+
+
+.header-block{
+    &__item-inner1 {
+        color: #FFFFFF;
+    }
+    &__number1 {
+        color: #FFFFFF;
+    }
+}
+
+.header-block1{
+    background-color: rgba(15, 41, 146, 0.7);
+}
+
+
+   
+
+
+
+
+
+
+

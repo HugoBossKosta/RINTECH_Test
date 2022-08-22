@@ -1,0 +1,9 @@
+@import '../mixin/mixin';
+@import '../templates/footer_block-main';
+
+.footer-right {
+
+    &__blue-logo2 {
+        display: block;
+    }
+}

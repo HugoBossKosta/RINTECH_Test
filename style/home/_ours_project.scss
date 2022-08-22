@@ -1,0 +1,105 @@
+@import '../mixin/mixin';
+
+.our-project {
+    position: relative;
+margin-bottom: 140px;
+width: 100%;
+@media screen and (max-width:980px) {
+margin-bottom: 70px;
+}
+
+&__title {
+    margin-bottom: 35px;
+    @media screen and (max-width:980px){
+        margin-bottom: 20px;
+    }
+}
+
+&__block-img {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+@media screen and (max-width:980px)
+{
+    flex-flow:column;
+    justify-content: center;
+}
+
+}
+
+&__div-img {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 1.5vw;
+    margin-bottom: 1.5vh;
+    width: 48%;
+    justify-content: start;
+    align-items: flex-start;
+   
+    @media screen and (max-width:980px) {
+        width: 100%;
+        margin-bottom: 1vh;
+        margin-right: 0;
+    }
+}
+
+&__div-img:nth-child(even) {
+    margin-right: 0;
+}
+
+&__div-img::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+&__div-img:hover::before {
+    opacity: 1;
+}
+
+&__div-img:hover &__img {
+    transform: scale(1.05);
+}
+
+
+&__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+&__text{
+position: absolute;
+width: 70%;
+left:8vw;
+top:16vh;
+@include adaptiv-font(24,16);
+color: #fff;
+overflow: hidden;
+z-index: 3;
+}
+// Всплытие текста при наведении
+&__text > span {
+    display: block;
+    transform: translateY(12vh);
+    transition: transform 0.2s ease;
+}
+
+&__div-img:hover  &__text > span {
+    transform: translateY(0);
+}
+}
+
+
+

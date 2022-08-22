@@ -1,0 +1,27 @@
+@import '../mixin/mixin';
+@import '../sandwich_menu/sandwich_menu';
+@import '../templates/header_block-main';
+
+    // верстка кнопки
+#sidebar .toggle-btn2 span::before {
+    background-color:#2D2D2D;
+}
+
+#sidebar .toggle-btn2 span::after {
+    background-color:#2D2D2D;
+}
+
+#sidebar-cross .cross-close2:hover {
+    background-color: rgb(102, 96, 96, 0.8);
+}
+
+.header-block2 {
+    background-color: rgb(255, 255, 255, 0.9);
+    &__item-inner2 {
+        color: #2E2E2E;
+    }
+
+    &__number2 {
+        color: #2E2E2E;
+    }
+}

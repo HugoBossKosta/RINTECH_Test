@@ -1,0 +1,134 @@
+@import '../mixin/mixin';
+@import '../anim/anim';
+
+
+.text_under_input {
+    color: #FFFFFF;
+        margin-bottom: 1vh;
+        opacity: 0.9;
+}
+
+
+.contact_us {
+    position: relative;
+    background-color: #0F2992;
+    padding: 7vh 4.5vw;
+    overflow: hidden;
+ 
+    &-title {
+        margin-bottom: 45px;
+        color: #FFFFFF;
+        @media screen and (max-width:980px) {
+            margin-bottom: 23px;
+        }
+    }
+}
+
+.contactUSsec-Inputblock {
+    width: 70%;
+    @media screen and (max-width:835px){
+        width: 100%;
+    }
+}
+
+
+
+.contactUS_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    @media screen and (max-width:835px){
+        flex-flow: column;
+    }
+
+    &__item {
+        margin-right: 10vw;
+        margin-bottom: 3vh;
+        @media screen and (max-width:980px){
+            margin-right: 5vw;
+        }
+        @media screen and (max-width:835px){
+            margin-right: 5.2vw;
+        }
+
+
+
+    }
+
+    &__item:nth-child(2) {
+        margin-right: 2.1vw;
+        @media screen and (max-width:835px){
+            margin-right: 5.2vw;
+        }
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+}
+
+
+
+.contactUS_blockDOWN {
+padding-bottom: 64px;
+overflow: hidden;
+
+@media screen and (max-width:980px) {
+    padding-bottom: 30px;
+}
+@media screen and (max-width:835px){
+    margin-right: 3vw;
+}
+
+    &__textarea {
+        resize: none;
+        width: 100%;
+        height: 12vh;
+        background: rgba(255, 255, 255, 0.26);
+        padding: 16px 17px 16px 17px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom:15px;
+        // margin-right: 40vw;
+        border: none;
+    }
+
+
+
+     &__textarea.active:focus{
+            background-color: #E2E2E2;
+        }
+
+    &__link > span {
+        color: #fff;
+        opacity: 0.9;
+    }
+    &__color  {
+        color: #fff !important;
+        opacity: 1 !important;
+        font-weight: 900;
+    }
+}
+
+
+
+.contactUS_blockButton {
+    width: 100%;
+  
+    &__button {
+        width: 30%;
+        max-width: 300px;
+        color: #2D2D2D;
+        @media screen and (max-width:980px){
+            margin-left: 0vw !important;
+        }
+        @media screen and (max-width:835px){
+            margin: 0 auto !important;
+        }
+
+    }
+}
+

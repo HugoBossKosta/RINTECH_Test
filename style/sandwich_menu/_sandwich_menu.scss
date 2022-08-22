@@ -1,0 +1,192 @@
+@import '../mixin/mixin';
+
+// Бургер меню на js
+
+#sidebar-menu {
+    z-index: 4;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(15, 41, 146, 1); 
+    right: -70vw;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition:all 600ms;
+}
+
+#sidebar-menu.active {
+    right:0px;
+}
+
+#sidebar-menu ul li:first-child {
+        padding-top: 5vh;
+        padding-left: 0.7vw;
+         padding-bottom: 2vh;
+         list-style: none;
+
+         @media screen and (max-width:767px) {
+            margin-top: 5vh;
+        }
+
+        @media screen and (min-width:550px) {
+            padding-left: 5vw;
+        }
+}
+
+.sandwich-menu {
+    color: white;
+    @include adaptiv-font(20,16);
+    margin-left: 3.5vw;
+    
+    @media screen and (min-width:550px) {
+        margin-left: 5vw;
+    }
+}
+
+.sandwich-li {
+    margin-bottom: 3vh;
+    margin-left: 2vw;
+}
+
+#sidebar {
+    @media screen and (min-width:980px) {
+        display: none;
+    }
+}
+
+#sidebar.active {
+    visibility: hidden;
+}
+
+#sidebar .toggle-btn {
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 4vw;
+}
+
+#sidebar .toggle-btn span {
+    position: relative;
+    display: inline-block;;
+    width: 25px;
+    height: 1px;
+    margin: 0.8vh 0;
+}
+
+#sidebar .toggle-btn span::before {
+    content: '';
+    position: absolute;
+    top:0.5vh;
+    width: 25px;
+    height: 2px;
+    // background-color: #FFFFFF;
+}
+
+#sidebar .toggle-btn span::after {
+    content: '';
+    position: absolute;
+    bottom: 0.5vh;
+    width: 25px;
+    height: 2px;
+    // background-color: #FFFFFF;
+}
+
+
+
+#sidebar .toggle-btn:hover {
+    background-color: rgb(43, 39, 39, 0.7);
+}
+
+// Тёмный фон
+ #sidebar-background  {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 7, 7, 0.7);
+    z-index: 3;
+    display: none;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition:all 600ms;
+}
+
+#sidebar-background.active{
+    display: block;
+}
+
+// кнопка крестик
+
+#sidebar-cross {
+    position: fixed;
+    display: none;
+    z-index: 5;
+    right: -52vw;
+    top:2vh;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+    transition:all 600ms;
+
+}
+
+#sidebar-cross.active {
+    display: block;
+    right: -2vw;
+    top:2vh;
+    
+
+    @media screen and (max-width:767px) {
+        top:1vh;
+    }
+}
+
+#sidebar-cross .cross-close {
+   
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 4vh;
+
+    @media screen and (max-width:767px) {
+        margin-right: 2vh;
+    }
+
+}
+
+.cross-close__stripe {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 1px;
+    margin: 0.8vh 0;
+}
+
+
+.cross-close__stripe::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    // background-color: #FFFFFF;
+    transform: rotate(50deg);
+}
+
+.cross-close__stripe::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    // background-color: #FFFFFF;
+    transform: rotate(-50deg);
+}
+
+
+#sidebar-cross .cross-close:hover {
+    // background-color: rgb(43, 39, 39, 0.7);
+}
+
+.sidebar-menu-logo{
+    width: 40%;
+    margin-left: 1.5vw;
+}

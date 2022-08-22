@@ -1,0 +1,259 @@
+@import '../mixin/mixin';
+
+
+.company-block2 {
+    background-color: #fff;
+    margin-bottom: 85px;
+    @media screen and (max-width:980px){
+        margin-bottom: 0px;
+    }
+   
+}
+
+.about-company {
+display: flex;
+margin-bottom: 140px;
+justify-content: space-around;
+// align-items:center;
+align-items:flex-start;
+@media screen and (max-width:980px) {
+    margin-bottom: 70px;
+    flex-flow: column;
+}
+
+
+&__left {
+width: 35%;
+margin-right: 10vw;
+@media screen and (max-width:980px) {
+    width: 100%;
+    margin-right: 0;
+    }
+}
+
+&__title {
+    @include adaptiv-font(40,32);
+    white-space: nowrap;
+    @media screen and (max-width:980px){
+        margin-bottom: 2vh;
+    }
+       
+}
+
+&__description {
+    margin-bottom: 25px;
+    line-height: 19.5px;
+    @media screen and (max-width:980px) {
+        text-align:start;
+    }
+}
+
+&__button {
+ width: 60%;
+ max-width: 300px;
+
+background: #0F2992; 
+color: #fff;
+}
+
+
+&__right {
+    width: 40%;
+    @media screen and (max-width:980px) {
+        // display: none;
+        width: 100%;
+            }
+}
+
+
+}
+
+
+    // блок система ценностей
+
+    .systemValuesBlock-mainTitle {
+        margin-bottom: 5vh;
+        @media screen and (max-width:980px){
+        margin-bottom: 2vh;
+        }
+    }
+
+    .systemValuesBlock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12vh;
+        @media screen and (max-width:980px){
+        margin-bottom: 5vh;
+        flex-flow: column;
+        justify-content: center;
+        
+
+
+        }
+
+        &__item {
+            width: 38%;
+            display: flex;
+            margin-bottom: 3.4vh;
+            margin-right: 8.6vh;
+            align-items: flex-start;
+            @media screen and (max-width:980px){
+            margin-bottom: 2.7vh;
+            width: 95%;
+            margin-right: 0;
+            margin-left: -5vw;
+            }
+        }
+        &__item:last-child(){
+            margin-bottom: 0;
+        }
+        &__item:nth-child(even){
+            margin-right: 0;
+        }
+
+        &__text {
+            display: flex;
+            flex-flow: column;
+        }
+
+        &__title {
+            @include adaptiv-font(24,20);
+            line-height: 29.26px;
+            margin-bottom: 1vh;
+            font-weight: 600;
+            color: #2D2D2D;
+            @media screen and (max-width:980px){
+                line-height: 24.38px;
+            }
+        }
+
+        &__img {
+            margin-right: 1.5vh;
+            @media screen and (max-width:980px){
+            margin-right: 1vh;
+            width: 20%;
+            }
+        }
+
+    }
+
+
+
+.compamy-structure {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 140px;
+@media screen and (max-width:980px) {
+    margin-bottom: 70px;
+}
+
+&__logo {
+    width: 50%;
+    height: 50%;
+    @media screen and (max-width:980px) {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+}
+
+.description-structure {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 4vh;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:980px) {
+        justify-content: flex-start;
+        text-align: flex-start;
+        align-items:flex-start;
+    }
+
+    &__mainTitle {
+        margin-bottom: 5.5vh;
+        @media screen and (max-width:980px){
+        margin-bottom: 2vh;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 3vh;
+        @media screen and (max-width:980px) {
+            flex-flow: column;
+            margin-bottom: 3.5vh;
+            
+            align-items:flex-start;
+        }
+    }
+
+&__compamystr-title {
+    @include adaptiv-font(32,24);
+    margin-right: 15vw;
+    width: 15vw;
+    text-align: flex-start;
+    font-weight: 600;
+    line-height: 39px;
+    @media screen and (max-width:980px) {
+        width: 50vw;
+        line-height: 29px;
+        margin-right: 0;
+        text-align: flex-start;
+        margin-bottom: 1.5vh;
+    }
+    }
+
+&__compamystr-column {
+    margin-right: 5vw;
+    width: 22vw;
+    color: #2D2D2D;
+    text-align: flex-start;
+    @media screen and (max-width:980px) {
+        text-align: flex-start;
+        margin-right: 0;
+        width: 50vw;
+        margin-bottom: 1.5vh;
+    }
+
+}
+
+&__compamystr-column:last-child {
+    margin-right: 0;
+}
+
+&__compamystr-description {
+    margin-bottom: 1.5vh;
+    line-height: 29.26px;
+    @media screen and (max-width:980px) {
+        line-height: 24.38px;
+    }
+    @include adaptiv-font(24,20);
+}
+
+&__compamystr-description:last-child {
+    margin-bottom: 0;
+}
+
+&__line {
+    width: 100%;
+    height: 0.1vh;
+    background: #2C47B0;
+    opacity: 0.5;
+    margin-bottom: 3vh;
+}
+
+}
+
+
+
+
+
+
+
+

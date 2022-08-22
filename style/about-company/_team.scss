@@ -1,0 +1,135 @@
+@import '../mixin/mixin';
+
+.foundersBlock {
+    margin-bottom: 15vh;
+    @media screen and (max-width:980px){
+        margin-bottom: 10vh; 
+    }
+
+
+&__title {
+    margin-bottom: 4vh;
+    @media screen and (max-width:980px) {
+    margin-bottom: 2vh;
+    }
+}
+
+&__item {
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @media screen and (max-width:980px) {
+        width: 80%;
+        margin-bottom: 3vh;
+    }
+}
+
+&__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh;
+    @media screen and (max-width:980px) {
+    margin-bottom: 6vh;
+    flex-flow: column;
+    }
+}
+
+// &__down{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 12vh;
+//     @media screen and (max-width:980px) {
+//     margin-bottom: 6vh;
+//     flex-flow: column;
+//     }
+// }
+
+&__img-cirle {
+    width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 2vh;
+  @media screen and (max-width:1366px) {
+    width: 300px;
+    height: 300px;
+  }
+  @media screen and (max-width:1024px) {
+    width: 250px;
+    height: 250px;
+  }
+  @media screen and (max-width:980px) {
+    width: 350px;
+    height: 350px;
+  }
+  @media screen and (max-width:480px) {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+&__FullName {
+    @include adaptiv-font(40,20);
+    margin-bottom: 0.8vh;
+    line-height: 48.76px;
+    font-weight: 600;
+    @media screen and (max-width:980px) {
+        margin-bottom: 1vh;
+        line-height: 24.38px;
+        }
+}
+
+&__FullName-des {
+    @include adaptiv-font(16,14);
+    line-height:  20px;
+    font-weight: 400;
+    @media screen and (max-width:980px){
+        line-height: 17px;
+    }
+}
+}
+
+.schemeTeamBlock {
+    margin-bottom: 6vh;
+
+    @media screen and (max-width:980px) {
+        margin-bottom: 3vh;
+    }
+
+    &__title {
+        margin-bottom: 1vh;
+    }
+
+    &__des {
+        margin-bottom: 3vh;
+        width: 40%;
+        @media screen and (max-width:980px) {
+            width: 75%;
+        margin-bottom: 2.5vh;
+        }
+    }
+
+    &__down1 {
+        width: 100%;
+        @media screen and (max-width:980px) {
+            display: none;
+        }
+    }
+
+    &__down2 {
+        @media screen and (min-width:980px) {
+            display: none;
+        }
+        width: 100%;
+    }
+}

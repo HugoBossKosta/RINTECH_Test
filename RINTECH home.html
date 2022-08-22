@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>main</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/fonts.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <div class="page">
+            <!-- Темный фон -->
+            <div id="sidebar-background" onclick="openMenu()">
+            </div>
+        <!-- НАЧАЛО HEAD -->
+        <header class="header">
+                <!-- Начало вёрстки вроде рабочего Бургер меню на JS-->
+                <!-- кнопка крестик -->
+            <div id="sidebar-cross" onclick="openMenu() ">
+                <div class="cross-close cross-close1">
+                    <span class="cross-close__stripe"></span>
+                </div>
+            </div>
+
+            <div id="sidebar-menu">
+                <ul>
+                   <a href="./RINTECH home.html"><li class="sandwich-li">
+                        <img class="sidebar-menu-logo" src="./image/home/header/home_header__logo.svg" alt="">
+                    </li></a> 
+
+                    
+                    <li class="sandwich-li"><a  class="sandwich-menu link-text link-text3" href="./RINTECH page/RINTECH page_about-company.html">О компании</a></li>
+                    <li class="sandwich-li"><a  class="sandwich-menu sandwich-menuCL link-text link-text3 " href="#PROJECT">Проекты</a></li>   
+                    <li class="sandwich-li"><a  class="sandwich-menu sandwich-menuCL link-text link-text3 " href="#SERVICES">Услуги</a></li>   
+                    <li class="sandwich-li"><a  class="sandwich-menu link-text link-text3" href="./RINTECH page/RINTECH page_vacancies.html">Вакансии</a></li>
+                    <li class="sandwich-li"><a  class="sandwich-menu link-text link-text3" href="./RINTECH page/RINTECH page_contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="container">
+                <div class="header-block header-block1">
+
+                    <a href="./RINTECH home.html">
+                        <img  class="header-block__logo" src="./image/home/header/home_header__logo.svg" alt="">
+                    </a>
+                
+                    <nav class="header-navigations">
+                        <ul class="header-block__navigations">
+                            <li class="header-block__item"><a class="header-block__item-inner header-block__item-inner1 link-text link-text3" href="./RINTECH page/RINTECH page_about-company.html">О компании</a></li>
+                            <li class="header-block__item"><a class="header-block__item-inner header-block__item-inner1 link-text link-text3" href="#PROJECT">Проекты</a></li>
+                            <li class="header-block__item"><a class="header-block__item-inner header-block__item-inner1 link-text link-text3" href="#SERVICES">Услуги</a></li>
+                            <li class="header-block__item"><a class="header-block__item-inner header-block__item-inner1 link-text link-text3" href="./RINTECH page/RINTECH page_vacancies.html">Вакансии</a></li>
+                            <li class="header-block__item"><a class="header-block__item-inner header-block__item-inner1 link-text link-text3" href="./RINTECH page/RINTECH page_contacts.html">Контакты</a></li>
+                            <li class="header-block__item">
+                                    <a href="tel:+7(920)-162-01-07" class="header-block__number header-block__number1 link-text link-text3">+7 920 162 01 07</a>
+                            </li>
+                        </ul>
+                    </nav>
+                
+                    <div id="sidebar">
+                        <div class="toggle-btn toggle-btn1" onclick="openMenu()">
+                            <span class="stripe_burger-menu"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Начало Main -->
+        <main>
+            <section class="underheader">
+                
+                <div class="container">
+                        <div class="main-info">
+                            <div class="main-info__left">
+                                <h1 class="main-info__left-title">
+                                    Российский <br>IT-интегратор
+                                </h1>
+            
+                                <p class="main-info__left-description">
+                                    Интеграция управленческого, научного, цифрового и социокультурного ресурсов как метаподхода для реализации цифровых решений.
+                                </p>
+            
+                                <button name="B_connect_with_us" class="main-info__left-button button">
+                                    Связаться с нами
+                                </button>
+                            </div>
+        
+                </div>
+                            <div class="main-info__right">
+                                    <img src="./image/home/main/home-logo_top.svg" alt="" class="main-info__img-top element-animationLogUp">                                                    
+                                    <img src="./image/home/main/home-logo_down.svg" alt="" class="main-info__img-down element-animationLogDown">     
+                            </div>
+                    </div>
+                
+            </section>
+        </main>
+
+        <!-- Блок о компании -->
+        <section class="company-block2">
+            <div class="container">
+                <div class="about-company">
+                    <div class="about-company__left">
+                        <div class="about-company__title title element-animation">
+                            О компании
+                        </div>
+                    </div>
+                    <div class="about-company__right">
+                        <div class="about-company__description description-Size element-animation">
+                            Мы создаем позитивные взаимодействия, которые приводят к значимым бизнес-результатам.
+                            <br>
+                            <br>
+                            В условиях быстрой цифровизации и растущих требований со стороны конечных потребителей в предоставлении исключительных услуг главным приоритетом становится не развитие технологий, а изменение в способе мышления и новые бизнес-стратегии.
+                            <br>
+                            <br>
+                            Используя потенциал каждого члена команды и проработанный комплексный подход в проектировании и реализации проектов мы приведем вас к лидирующему положению в вашей сфере деятельности.
+                            <br>
+                            <br>
+                            Наша уникальность заключается в развитии собственного фреймворка управления, обеспечивающего создание эффективных команд специалистов, корпоративного реестра знаний, синхронизацию команд и прозрачность принципов принятия управленческих решений
+                        </div>
+
+                        <button name="B_more" class="about-company__button button element-animation">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="compamy-structure">
+                    <img class="compamy-structure__logo element-animation" src="./image/home/about-company/structure.png" alt="">
+                </div>
+
+
+                <!-- Блок системы ценностей -->
+            
+            <div class="systemValuesBlock-mainTitle title">
+                Система ценностей
+            </div>
+            <div class="systemValuesBlock">
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values1.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title ">
+                            Команда
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            В одиночку сложно добиться по-настоящему значительных результатов, поэтому командный дух — это один из главных принципов нашей компании. Как сказал Джек Уэлч: «Слаженная команда всегда будет работать лучше, чем талантливый одиночка».
+                        </div>
+                    </span>
+                </div>
+
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values2.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title">
+                            Внимание к деталям
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            Мы обеспечиваем высокое качество предоставляемых услуг, потому что это напрямую определяет репутацию компании на рынке.
+                        </div>
+                    </span>
+                </div>
+  
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values3.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title">
+                            Развитие
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            Стремление к самообразованию, получению опыта и постоянный анализ своих результатов — это отличает современную и динамичную компанию. Ведь без постоянного развития невозможно стать лучшими.
+                        </div>
+                    </span>
+                </div>
+
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values4.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title">
+                            База знаний, ротация
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            Умение сохранять и передавать свои знания и опыт — по-настоящему ценное качество, отличающее преуспевающего специалиста. Оно позволяет избегать ошибок в дальнейшем, искать новые пути реализации задач и расширять горизонты мышления.
+                        </div>
+                    </span>
+                </div>
+ 
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values5.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title">
+                            Человеческий потенциал
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            Безусловно, одна из самых главных ценностей — человеческий потенциал. Ведь все, что создается в бизнесе — дело рук человека. Поэтому, человеческий ресурс бесценен, как сама жизнь. Помните выражение: «Кадры решают все»?
+                        </div>
+                    </span>
+                </div>
+
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values6.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title">
+                            Нестандартный подход
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            Сегодняшний мир развивается столь динамично, что просто невозможно разработать стратегию мышления, актуальную для всех задач. Наша ценность — это уход от стереотипов, от шаблонов, и, надо отметить, мы действительно находим очень интересные решения.
+                        </div>
+                    </span>
+                </div>
+
+                <div class="systemValuesBlock__item">
+                    <img src="./image/home/about-company/values7.svg" alt="" class="systemValuesBlock__img">
+
+                    <span class="systemValuesBlock__text">
+                        <div class="systemValuesBlock__title">
+                            Мыслим глобально
+                        </div>
+                        <div class="systemValuesBlock__des description-Size2">
+                            Видеть конечную цель, осознанно ставить подзадачи для ее достижения — это помогает превращать порой даже немыслимую идею в четкий план действий.
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+
+                 <!-- Список направлений работы -->
+                 <div class="description-structure__mainTitle title">
+                    Направления
+                </div>
+                <div id="SERVICES" class="description-structure">
+
+                    <div class="description-structure__item">
+                        <div class="description-structure__compamystr-title element-animation">Аналитика</div>
+
+                        <div class="description-structure__compamystr-column">
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Сбор данных и исследования
+                            </div>
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Проектирование программной части
+                            </div>
+                        </div>
+                        <div class="description-structure__compamystr-column">
+                        </div>
+                    </div>
+
+
+                    <div class="description-structure__line"></div>
+
+
+                    <div class="description-structure__item">
+                        <div class="description-structure__compamystr-title element-animation">Дизайн</div>
+                        <div class="description-structure__compamystr-column">
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Разработка дизайна сайтов
+                            </div>
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Разработка фирменного стиля
+                            </div>
+                        </div>
+                        <div class="description-structure__compamystr-column">
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Проектирование интерфейсов
+                            </div>
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                UX/UI-дизайн
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="description-structure__line"></div>
+
+
+                    <div class="description-structure__item">
+
+                        <div class="description-structure__compamystr-title element-animation">Разработка</div>
+                            <div class="description-structure__compamystr-column">
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Мобильные приложения
+                                </div>
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Разработка сайтов
+                                </div>
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Разработка веб-сервисов
+                                </div>
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Техническая поддержка сайтов
+                                </div>
+                            </div>
+                            <div class="description-structure__compamystr-column">
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Разработка ПО 
+                                </div>
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Интеграции
+                                </div>
+                                <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                    Создание сложных сервисов, CRM/ERP-систем
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="description-structure__line"></div>
+
+                    <div class="description-structure__item">
+                        <div class="description-structure__compamystr-title element-animation">Маркетинг</div>
+
+                        <div class="description-structure__compamystr-column">
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Настройка и ведение контекстной рекламы
+                            </div>
+                        </div>
+                        <div class="description-structure__compamystr-column">
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                SEO-продвижение
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="description-structure__line"></div>
+
+
+                    <div class="description-structure__item">
+                        <div class="description-structure__compamystr-title element-animation">Отраслевые решения</div>
+                        <div class="description-structure__compamystr-column">
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Разработка сайтов для госкомпаний
+                            </div>
+                            <div class="description-structure__compamystr-description description-Size3 element-animation">
+                                Научные исследования
+                            </div>
+                        </div>
+                        <div class="description-structure__compamystr-column">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция Наши проекты -->
+        <section id="PROJECT" class="ourProject">
+            <div class="container">
+                <div class="our-project">
+                    <div class="our-project__title title element-animation">Наши проекты</div>
+                    <div class="our-project__block-img">
+                        <div class="our-project__div-img element-animation">
+                            <img class="our-project__img" src="./image/home/ours_project/our-project_1.png" alt="">
+                            <div class="our-project__text">
+                                <span>Электронный архив материалов по тематическому направлению "Науки о земле и электрике"</span>
+                            </div>
+                        </div>
+                        <div class="our-project__div-img element-animation">
+                            <img class="our-project__img" src="./image/home/ours_project/our-project_2.png" alt="">
+                            <div class="our-project__text">
+                                <span>Российская академия образования личный кабинет пользователя</span>
+                            </div>
+                        </div>
+                        <div class="our-project__div-img element-animation">
+                            <img class="our-project__img" src="./image/home/ours_project/our-project_3.png" alt="">
+                            <div class="our-project__text">
+                                <span>Авторская цифровая педагогическая платформа</span>
+                            </div>
+                        </div>
+                        <div class="our-project__div-img element-animation">
+                            <img class="our-project__img" src="./image/home/ours_project/our-project_4.png" alt="">
+                            <div class="our-project__text">
+                                <span>Система дистанционного электронного голосования</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!-- Начало Блока Наши клиенты и партнеры  -->
+            <section class="section-ourProject">
+                <div class="container">
+                    <div class="ourProject-title title">Наши клиенты и партнеры</div>
+
+                    <div class="ourProject-block">
+
+                        <span class="ourProject-sec">
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-1.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">Федеральное агентство железнодорожного транспорта</p>
+                            </span>
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-2.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">РОССИЙСКАЯ АКАДЕМИЯ ОБРАЗОВАНИЯ</p>
+                            </span>
+                        </span>
+
+                        <span class="ourProject-sec">
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-3.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">Министерство науки и высшего образования Российской Федерации</p>
+                            </span>
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-4.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">Министерство просвещения Российской Федерации</p>
+                            </span>
+                        </span>
+
+                        <span class="ourProject-sec">
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-5.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">Государственная корпорация по атомной энергии «Росатом»</p>
+                            </span>
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-6.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">Министерством культуры Российской Федерации</p>
+                            </span>
+                        </span>
+
+                        <span class="ourProject-sec">
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-7.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">МНИОИ им. П. А. Герцена, филиал ФГБУ Нмиц радиологии Минздрава России</p>
+                            </span>
+                            <span class="ourProject-sec__item element-animation">
+                                <img src="./image/home/our_clients_and_partners/home_our_clients-8.svg" alt="" class="ourProject-sec__img">
+                                <p class="ourProject-sec__text description-Size">ФГБНУ "Институт стратегии развития образования РАО"</p>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </section>
+                    <!-- Проекты компании -->
+            <section class="section-projectCompany">
+                <div class="container">
+                    <div class="projectCcompany-title title">Проекты компании</div>
+
+                    <div class="projectCompany-block">
+                        <div class="projectCompany-block__item element-animation">
+                            <img src="./image/home/project_company/home_project_company-1.svg" alt="" class="projectCompany-block__img">
+                            <div class="projectCompany-block__title">
+                                Allis.school
+                            </div>
+                            <div class="projectCompany-block__description description-Size">
+                                Авторская цифровая педагогическая платформа
+                            </div>
+                        </div>
+
+                        <div class="projectCompany-block__item element-animation">
+                            <img src="./image/home/project_company/home_project_company-2.svg" alt="" class="projectCompany-block__img projectCompany-block__img2">
+                            <div class="projectCompany-block__title projectCompany-block__title2">
+                                Insocium
+                            </div>
+                            <div class="projectCompany-block__description projectCompany-block__description2 description-Size">
+                                Новый взгляд на социальную сеть
+                            </div>
+                        </div>
+
+                        <!-- <div class="projectCompany-block__item">
+                            <div class="projectCompany-block__description projectCompany-block__description-soon">
+                                тут скоро что-то появится...
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="projectCompany-block__item">
+                            <img src="./image/home/project_company/home_project_company-3.svg" alt="" class="projectCompany-block__img">
+                            <div class="projectCompany-block__title">
+                                Esma
+                            </div>
+                            <div class="projectCompany-block__description">
+                                Новый взгляд на социальную сеть
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+
+
+
+                <!-- Блок с контактами -->
+        <section class="section-contact_us">
+            <div class="contact_us">
+                <!-- <div class="contact_us-title title element-animation">
+                    Связаться с нами
+                </div> -->
+                <div class="container contactUS-container element-animation">
+                    <div class="contact_us-title title element-animation">
+                    Связаться с нами
+                    </div>
+                    <div class="contactUSsec-Inputblock">
+                        <div class="contactUS_block">
+                            <div class="contactUS_block__item">
+                                <div class="text_under_input">
+                                    Ваше имя
+                                </div>
+                                <input class="contactUS_block__input input" type="text">
+                            </div>
+    
+                            <div class="contactUS_block__item">
+                                <div class="text_under_input">
+                                    Телефон
+                                </div>
+                                <input class="contactUS_block__input input" type="text">
+                            </div>
+    
+                            <div class="contactUS_block__item">
+                                <div class="text_under_input">
+                                    Электронная почта
+                                </div>
+                                <input class="contactUS_block__input input" type="text">
+                            </div>
+                        </div>    
+    
+                        <div class="contactUS_blockDOWN">
+                            <div class="text_under_input">
+                                Сообщение
+                            </div>
+                            <textarea class="contactUS_blockDOWN__textarea active" id="" maxlength="400" minlength="1"></textarea>
+                            <div class="contactUS_blockDOWN__personal-data">
+                                <a class="contactUS_blockDOWN__link link-text link-text3" href=""><span>Нажимая кнопку «Отправить», Вы соглашаетесь с </span>
+                                    <span class="contactUS_blockDOWN__color" >политикой обработки персональных данных</span></a></label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="contactUS_blockButton">
+                        <button class="contactUS_blockButton__button button">Отправить</button>
+                    </div>
+                </div>
+                <!-- <img src="./image/home/project_company/home_contactsUS.svg" alt="" class="contact_us-LOGO"> -->
+            </div>
+        </section> 
+
+        <!-- Начало верстки footer блока -->
+    <footer class="section-footer">
+            <div class="container">
+                <div class="footer-block footer-block1 element-animation">
+
+                    <div class="footer-block__left footer-left">
+                        <div class="footer-left__top footer-text footer-text1">
+                            © 2022 ООО «РИНТЕХ» Все права защищены.
+                        </div>
+                        <div class="footer-left__down footer-text footer-text1">
+                            ИНН 6950229495  КПП 695001001
+                        </div>
+                    </div>
+
+                    <div class="footer-block__center footer-center">
+                        <a class="footer-center__link footer-text footer-text1 link-text link-text1 link-text2" href="./RINTECH page/RINTECH page_about-company.html">О компании</a>
+                        <!-- <a class="footer-center__link footer-text footer-text1 link-text link-text1 link-text2" href="#PROJECT">Проекты</a>
+                        <a class="footer-center__link footer-text footer-text1 link-text link-text1 link-text2" href="#SERVICES">Услуги</a> -->
+                        <a class="footer-center__link footer-text footer-text1 link-text link-text1 link-text2" href="./RINTECH page/RINTECH page_vacancies.html">Вакансии</a>
+                        <a class="footer-center__link footer-text footer-text1 link-text link-text1 link-text2" href="./RINTECH page/RINTECH page_contacts.html">Контакты</a>
+                        <div class="footer-center__acr">
+                            <img class="footer-center__blue-icon2" src="./image/home/footer_block/home_footer-icon.svg" alt="">
+                            <img class="footer-center__white-icon2" src="./image/home/footer_block/home_footer-white_icon.svg" alt="">
+                            <a class="footer-text footer-text1 link-text link-text1 link-text2" href="">Аккредитация</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-block__right footer-right">
+                        <div class="footer-right__text">
+                            <div class="footer-right__textUp">
+                                <a class="link-text link-text1 link-text2 footer-text footer-text1" href="mailto:info@rinteh.com">info@rinteh.com</a>
+                            </div>
+                            <div class="footer-right__textDown">
+                                <a class="link-text link-text1 link-text2 footer-text footer-text1" href="tel:+7(920)-162-01-07">+7 920 162 01 07</a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="footer-right__logo">
+                            <a class="vk_link" href=""><img class="footer-right__blue-logo1" src="./image/home/footer_block/home_footer-logo1.svg" alt=""></a>
+                            <a class="telegram_link" href=""><img class="footer-right__blue-logo1" src="./image/home/footer_block/home_footer-logo2.svg" alt=""></a>
+                            <a class="WhatsUP_link" href=""><img class="footer-right__blue-logo1" src="./image/home/footer_block/home_footer-logo3.svg" alt=""></a>
+
+                            <a class="vk_link" href=""><img class="footer-right__white-logo1" src="./image/home/footer_block/home_footer-white_logo1.svg" alt=""></a>
+                            <a class="telegram_link" href=""><img class="footer-right__white-logo1" src="./image/home/footer_block/home_footer-white_logo2.svg" alt=""></a>
+                            <a class="WhatsUP_link" href=""><img class="footer-right__white-logo1" src="./image/home/footer_block/home_footer-white_logo3.svg" alt=""></a>
+                        </div> -->
+                    </div>       
+                </div>
+            </div>     
+    </footer>
+
+</div>
+    <script src="./scripts/scripts.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+</body>
+</html>
+
