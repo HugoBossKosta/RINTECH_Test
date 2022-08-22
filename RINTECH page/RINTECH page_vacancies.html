@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/fonts.css"> -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="page">
+
+    <div id="sidebar-background" onclick="openMenu()"></div>
+    <header class="header">
+        <div id="sidebar-cross" onclick="openMenu() ">
+            <div class="cross-close cross-close2">
+                <span class="cross-close__stripe cross-close__stripe2"></span>
+            </div>
+        </div>
+
+        <div id="sidebar-menu">
+            <ul>
+                <a href="../RINTECH home.html"> <li class="sandwich-li">
+                    <img class="sidebar-menu-logo" src="../image/home/header/home_header__logo.svg" alt="">
+                </li></a>
+
+                <li class="sandwich-li"><a  class="sandwich-menu link-text link-text1" href="../RINTECH page/RINTECH page_about-company.html">О компании</a></li>   
+                <li class="sandwich-li"><a  class="sandwich-menu link-text link-text1" href="../RINTECH home.html#PROJECT">Проекты</a></li>
+                <li class="sandwich-li"><a  class="sandwich-menu link-text link-text1" href="../RINTECH home.html#SERVICES">Услуги</a></li>
+                <li class="sandwich-li"><a  class="sandwich-menu link-text link-text1" href="../RINTECH page/RINTECH page_vacancies.html">Вакансии</a></li>
+                <li class="sandwich-li"><a  class="sandwich-menu link-text link-text1" href="../RINTECH page/RINTECH page_contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div class="header-block header-block2">
+
+                <a href="../RINTECH home.html"> <img src="../image/home/header/home_header__Black-logo.svg" alt="" class="header-block__logo"></a>
+                
+
+                <nav class="header-navigations">
+                    <ul class="header-block__navigations">
+                        <li class="header-block__item"><a class="header-block__item-inner header-block2__item-inner2 link-text link-text4" href="../RINTECH page/RINTECH page_about-company.html">О компании</a></li>
+                        <li class="header-block__item"><a class="header-block__item-inner header-block2__item-inner2 link-text link-text4" href="../RINTECH home.html#PROJECT">Проекты</a></li>
+                        <li class="header-block__item"><a class="header-block__item-inner header-block2__item-inner2 link-text link-text4" href="../RINTECH home.html#SERVICES">Услуги</a></li>
+                        <li class="header-block__item"><a class="header-block__item-inner header-block2__item-inner2 link-text link-text4" href="../RINTECH page/RINTECH page_vacancies.html">Вакансии</a></li>
+                        <li class="header-block__item"><a class="header-block__item-inner header-block2__item-inner2 link-text link-text4" href="../RINTECH page/RINTECH page_contacts.html">Контакты</a></li>
+                        <li class="header-block__item">
+                                <a href="tel:+7(920)-162-01-07" class="header-block__number  header-block2__number2 link-text link-text4">+7 920 162 01 07</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+                <div id="sidebar">
+                    <div class="toggle-btn toggle-btn2" onclick="openMenu()">
+                        <span class="stripe_burger-menu"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="workRintech">
+                <div class="workRintech__left">
+                    <div class="workRintech__title title element-animation">
+                        Как работают в Ринтех
+                    </div>
+                    <div class="workRintech__des description-Size element-animation">
+                        В Ринтех разрабатывают сложные веб- и мобильные продукты. 
+                        Мы верим в дизайн, основанный на данных, аналитике и юзабилити.
+                    </div>
+                </div>
+
+               <span class="workRintech__right">
+                <img class="workRintech__logo-top element-animationLogUp" src="../image/vacancies/vacancies-toplogo.svg" alt="">
+                <img class="workRintech__logo-down element-animationLogDown" src="../image/vacancies/vacancies-downlogo.svg" alt="">
+
+               </span>
+            </div>
+        </div>
+    </main>
+
+
+        <!-- Блок Открытые вакансии -->
+    <section class="vacancies-section">
+        <div class="container">
+            <div class="vacancies-title title element-animation">
+                Открытые вакансии
+            </div>
+            <div class="vacanciesBlock">
+                <details class="vacanciesBlock__item">
+                    <summary class="vacanciesBlock__title element-animation">
+                        —  Разработчик Middle Flutter
+                        <span class="arrow-location">
+                            <span class="arrow"></span>
+                        </span>
+                    </summary>
+                  
+                    <ul class="vacanciesBlock__span-title element-animation vacanciesBlock__ul">Требуемый опыт работы:
+                        <li class="vacanciesBlock__li description-Size vacanciesBlock__li2">от 3 лет
+                        Полная занятость, полный день
+                        Возможно временное оформление: договор услуг, подряда, ГПХ, самозанятые, ИП</li>
+                    </ul>
+                    <ul class="vacanciesBlock__ul"> <span class="vacanciesBlock__span-title element-animation" >Задачи:</span> <br>
+                        <li class="vacanciesBlock__li element-animation">Разработка приложений с нуля и перенос ранее созданных приложений на flutter</li>
+                        <li class="vacanciesBlock__li element-animation">Разработка мобильных приложений, CRM, ERP.</li>
+                        <li class="vacanciesBlock__li element-animation">Улучшение архитектуры приложения</li>
+                        <li class="vacanciesBlock__li element-animation">Постановка задач тестировщику</li>
+                    </ul>
+
+                    <ul class="vacanciesBlock__ul"><span class="vacanciesBlock__span-title element-animation" >Требования:</span> <br>
+                        <li class="vacanciesBlock__li element-animation">Опыт разработки мобильных приложений от 3 лет</li>
+                        <li class="vacanciesBlock__li element-animation">Уверенные знания: Dart, Flutter, опыт от 2 года</li>
+                        <li class="vacanciesBlock__li element-animation">Наличие опубликованного приложения в AppStore/GooglePlay</li>
+                        <li class="vacanciesBlock__li element-animation">Знание архитектурных принципов проектирования мобильных приложений</li>
+                        <li class="vacanciesBlock__li element-animation">Понимание принципов RESTful API (http, dio)</li>
+                        <li class="vacanciesBlock__li element-animation">Опыт работы с БД (sqlite/hive/get_storage)</li>
+                        <li class="vacanciesBlock__li element-animation">Опыт командной разработки и умение использовать системы контроля версий (мы используем gitlab)</li>
+                        <li class="vacanciesBlock__li element-animation">Английский язык на уровне чтения тех документации</li>
+                        <li class="vacanciesBlock__li element-animation">Развитые soft-skills, умение взаимодействовать с командой</li>
+                    </ul>
+                </details>
+
+                <div class="vacanciesBlock__line element-animation">
+                </div>
+
+                <details class="vacanciesBlock__item">
+                    <summary class="vacanciesBlock__title element-animation element-animation">
+                        —  Project manager
+                        <span class="arrow-location">
+                            <span class="arrow"></span>
+                        </span>
+                    </summary>
+                    <div class="vacanciesBlock__des">
+                        
+                    </div>
+
+                    <ul class="vacanciesBlock__ul"><span class="vacanciesBlock__span-title element-animation" >Обязанности:</span><br>
+                        <li class="vacanciesBlock__li element-animation">Обсуждение, разработка и согласование бизнес требований для каждого этапа проекта с руководством, партнерами и заинтересованными сторонами.</li>
+                        <li class="vacanciesBlock__li element-animation">Описание функциональных требований к реализуемым проектам, формирование ТЗ.</li>
+                        <li class="vacanciesBlock__li element-animation">Активное участие в обсуждении и планировании работ по бизнес стратегии, а также взаимодействие с командой разработчиков и участие в тестировании новых IT-решений.</li>
+                        <li class="vacanciesBlock__li element-animation">Создание roadmap и контроль реализации стратегии развития продукта.</li>
+                        <li class="vacanciesBlock__li element-animation">Разработка, внедрение, координация и контроль регламентов исполнения проектов.</li>
+                        <li class="vacanciesBlock__li element-animation">Осуществление планирования и контроль за исполнением проектов (ресурсы, загрузка, бюджет, закупки).</li>
+                        <li class="vacanciesBlock__li element-animation">Осуществление анализа и оценки рисков исполнения проектов.</li>
+                        <li class="vacanciesBlock__li element-animation"> Налаживание необходимых коммуникаций между всеми участниками проекта.</li>
+                        <li class="vacanciesBlock__li element-animation">Формирование отчетности о ходе исполнения проектов по всем направлениям (разработка, документальное сопровождение, внедрение).</li>
+                    </ul>
+
+                    <ul class="vacanciesBlock__ul"><span class="vacanciesBlock__span-title element-animation" >Требования:</span><br>
+                        <li class="vacanciesBlock__li element-animation"> Обязательно техническое образование;</li>
+                        <li class="vacanciesBlock__li element-animation">Опыт работы в сфере IT ;</li>
+                        <li class="vacanciesBlock__li element-animation">Опыт ведения проектов с использованием сервисов Jira, Confluence, GitLab;</li>
+                        <li class="vacanciesBlock__li element-animation">Опыт организации процесса работы в команде более 10 человек;</li>
+                        <li class="vacanciesBlock__li element-animation">Аналитический склад ума, грамотная устная и письменная речь;</li>
+                        <li class="vacanciesBlock__li element-animation">Опыт управления проектами в области мобильной разработки приветствуется;</li>
+                        <li class="vacanciesBlock__li element-animation">Знание ГОСТ и опыт работы в МО РФ приветствуется.</li>
+                    </ul>
+
+                    <ul class="vacanciesBlock__ul"><span class="vacanciesBlock__span-title element-animation" >Условия:</span><br>
+                        <li class="vacanciesBlock__li element-animation">График работы 5/2 с 10:00-19:00;</li>
+                    </ul>
+                </details>
+
+                <div class="vacanciesBlock__line element-animation">
+                </div> 
+            </div> 
+
+            <div class="vacancies-divEmail element-animation">
+                Если вы не нашли интересующую вакансию —<br> пишите нам на <a href="mailto:hr@rinteh.com" class="vacancies-link link-text link-text5">hr@rinteh.com </a><br> Мы обязательно рассмотрим ваше резюме.
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <footer class="section-footer footer-block2 ">
+        <div class="container">
+            <div class="footer-block footer-block2 element-animation">
+
+                <div class="footer-block__left footer-left">
+                    <div class="footer-left__top footer-text footer-text3">
+                        © 2022 ООО «РИНТЕХ» Все права защищены.
+                    </div>
+                    <div class="footer-left__down footer-text footer-text3">
+                        ИНН 6950229495  КПП 695001001
+                    </div>
+                </div>
+
+                <div class="footer-block__center footer-center">
+                    <a class="footer-center__link footer-text footer-text3 link-text link-text3 link-text2" href="../RINTECH page/RINTECH page_about-company.html">О компании</a>
+                    <!-- <a class="footer-center__link footer-text footer-text3 link-text link-text1 link-text3" href="../RINTECH home.html#PROJECT">Проекты</a>
+                    <a class="footer-center__link footer-text footer-text3 link-text link-text1 link-text3" href="../RINTECH home.html#SERVICES">Услуги</a> -->
+                    <a class="footer-center__link footer-text footer-text3 link-text link-text1 link-text3" href="../RINTECH page/RINTECH page_vacancies.html">Вакансии</a>
+                    <a class="footer-center__link footer-text footer-text3 link-text link-text1 link-text3" href="../RINTECH page/RINTECH page_contacts.html">Образование</a>
+                    <div class="footer-center__acr">
+                        <img class="footer-center__white-icon footer-center__white-icon" src="../image/home/footer_block/home_footer-white_icon.svg" alt="">
+                        <a class="footer-text footer-text3 link-text link-text1 link-text3" href="">Аккредитация</a>
+                    </div>
+                </div>
+
+                <div class="footer-block__right footer-right">
+                    <div class="footer-right__text">
+                        <div class="footer-right__textUp">
+                            <a class="link-text link-text1 link-text3 footer-text footer-text3" href="mailto:info@rinteh.com">info@rinteh.com</a>
+                        </div>
+                        <div class="footer-right__textDown">
+                            <a class="link-text link-text1 link-text3 footer-text footer-text3" href="tel:+7(920)-162-01-07">+7 920 162 01 07</a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="footer-right__logo">
+                        <a class="vk_link" href=""><img class="footer-right__white-logo2" src="../image/home/footer_block/home_footer-white_logo1.svg" alt=""></a>
+                        <a class="telegram_link" href=""><img class="footer-right__white-logo2" src="../image/home/footer_block/home_footer-white_logo2.svg" alt=""></a>
+                        <a class="WhatsUP_link" href=""><img class="footer-right__white-logo2" src="../image/home/footer_block/home_footer-white_logo3.svg" alt=""></a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+    <script src="../scripts/scripts.js"></script>
+</body>
+</html>
